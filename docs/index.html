@@ -3,15 +3,84 @@
 <head>
   <title>Bootstrap 5 Layout</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Content starts here -->
-  <p>Testing: 1, 2, 3, 4</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pirate Cove</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="article.html">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photos.html">Photos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Closing scripts here -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Jumbotron-->
+<div class="jumbotron jumbotron-fluid" style="background: url('img/pirate-ship.jpg') no-repeat center; background-size: cover; color: #fff; text-align: center; padding: 100px 0; font-family: 'Castoro Titling', sans-serif;">
+  <div class="container">
+      <h1 class="display-4">Welcome to Pirate Cove</h1>
+      <p>A diary by Captain Barnaby Bubbles</p>
+  </div>
+</div>
+
+<!-- Cards -->
+<h2 style="margin-left: 20px; margin-top: 20px;">Thar be monsters in the sea</h2>
+<div class="container">
+  <div class="row">
+      <div class="col-12 col-md-4">
+          <div class="card">
+              <img src="img/kraken01.jpg" class="card-img-top" alt="Kraken 1">
+              <div class="card-body">
+                  <h5 class="card-title">Nakgharnak</h5>
+                  <p class="card-text">Nakgharnak, a legendary sea creature, is said to dwell deep within the treacherous waters of Pirate Cove. With tentacles that reach out like shadowy appendages, Nakgharnak's mere presence strikes fear into the hearts of even the boldest pirates.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card">
+            <img src="img/kraken02.jpg" class="card-img-top" alt="Kraken 2">
+            <div class="card-body">
+                <h5 class="card-title">Gothnakgor</h5>
+                <p class="card-text">Gothnakgor is said to protect hidden treasures and ancient secrets buried within the depths of the cove. Its ominous presence serves as a constant reminder of the perils and wonders that await those who dare to venture into these waters.</p>
+            </div>
+        </div>
+    </div>
+      <div class="col-12 col-md-4">
+          <div class="card">
+              <img src="img/kraken03.jpg" class="card-img-top" alt="Kraken 1">
+              <div class="card-body">
+                  <h5 class="card-title">Xisgharel</h5>
+                  <p class="card-text">Xisgharel lures sailors into a world of enchantment and danger. Its siren-like call is said to lead ships to their doom or to hidden, untold treasures. Xisgharel remains an enigmatic figure, embodying the perilous allure of the sea.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Footer-->
+<footer class="footer text-center" style="background-color: #333; color: #fff; padding: 20px;">
+  <div class="container">
+      <p>Site by Sharon Lobo</p>
+  </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

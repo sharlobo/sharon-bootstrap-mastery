@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>Bootstrap 5 Layout</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pirate Cove</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"
+            href="index.html"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="article.html">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"
+            aria-current="page" 
+            href="photos.html">Photos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to Pirate Cove</h1>
+    <p>A diary by Captain Barnaby Bubbles</p>
+  </div>
+</div>
+
+<!-- Photo Carousel -->
+<div class="container">
+  <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/kraken01.jpg" alt="Kraken 1">
+        <div class="carousel-caption">
+          <p>Nakgharnak, a legendary sea creature...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/kraken02.jpg" alt="Kraken 2">
+        <div class="carousel-caption">
+          <p>Gothnakgor is said to protect hidden treasures...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/kraken03.jpg" alt="Kraken 3">
+        <div class="carousel-caption">
+          <p>Xisgharel lures sailors into a world of enchantment...</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#photoCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#photoCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Footer-->
+<footer class="footer text-center" style="background-color: #333; color: #fff; padding: 20px;">
+  <div class="container">
+      <p>Site by Sharon Lobo</p>
+  </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
